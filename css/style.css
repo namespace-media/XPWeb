@@ -22,7 +22,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 4%;
     background-color: #000000;
     line-height: 75px;
     left: 50%;
@@ -163,7 +163,7 @@ html {
 .info-wrapper {
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 10%;
     top: 600px;
     transition: 0.4s all;
 }
@@ -171,7 +171,7 @@ html {
 .info-wrapper-2 {
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 55%;
     top: 950px;
     transition: 0.4s all;
     /* padding: 350px 0; */
@@ -180,7 +180,7 @@ html {
 .info-wrapper-3 {
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 10%;
     top: 1300px;
     transition: 0.4s all;
     /* padding: 700px 0; */
@@ -189,7 +189,7 @@ html {
 .info-wrapper-4 {
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 55%;
     top: 1650px;
     transition: 0.4s all;
     /* padding: 1050px 0; */
@@ -198,8 +198,8 @@ html {
 .info-wrapper-5 {
     position: absolute;
     top: 20%;
-    left: 20%;
-    top: 1850px;
+    left: 10%;
+    top: 1875px;
     transition: 0.4s all;
     padding: 150px 0;
 }
@@ -251,10 +251,10 @@ b {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 9%;
     background-color: #000000;
     line-height: 75px;
-    left: 50%;
+    left: 60%;
 }
 
 .footer ul {
