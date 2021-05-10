@@ -1,0 +1,223 @@
+:root {
+    --active: #7289da;
+    --pressed: #899ad8;
+    --background: #36393f;
+    --sec-background: #2F3136;
+
+    --canary: rgba(218, 175, 114, 0.5);
+    --debug: rgba(218, 114, 114, 0.5);    
+    --optional: rgba(114, 136, 218, 0.5);
+}
+
+body {
+    /* background-image: url("./../images/mainpage.png");
+    background-position: top; */
+    /* background-image: url("https://namespace.media/img/images/2021/02/07/bg-transparent.png"); */
+    /* background-image: linear-gradient(#1b1b1be5, #1b1b1be5), url("https://namespace.media/img/images/2021/02/07/bg-transparent.png"); */
+    background-color: var(--background);
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.5); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:active {
+    background: rgb(85, 85, 85, .5); 
+  }
+
+.debug {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--pressed) !important;
+    opacity: 95% !important;
+}
+
+a:active {
+    color: var(--active) !important;
+}
+
+.cent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hori-cent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.active {
+    color: var(--active) !important;
+}
+
+hr {
+    background: white;
+    opacity: 5%;
+    height: .5px !important;
+    width: 100%;
+    text-align: left;
+    margin-top: 13px;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Menus */
+
+.title {
+    padding: 0;
+    /* border: dashed gold 2px; */
+    text-align: left;
+    float: left;
+    width: 40%;
+}
+
+.site-menu {
+    pointer-events: none;
+    padding: 0;
+    /* border: dashed gold 2px; */
+    text-align: right !important;
+    float: right;
+    width: 40%;
+}
+
+.site-menu div {
+    text-align: right;
+    font-size: 20px;
+    width: 100%;
+    font-weight: lighter;
+}
+
+.site-menu div .menu {
+    pointer-events: all;
+    font-size: .9em;
+    position: absolute;
+    top: 77px;
+    /* right: 15%; */
+    right: 0;
+}
+
+.site-menu div .menu a {
+    cursor: pointer;
+}
+
+.site-content {
+    font-weight: 400;
+    width: 77%;
+    height: 80% !important;
+    /* overflow: hidden !important; */
+    display: table;
+}
+
+.site-content h2 {
+    margin-top: 45px;
+    font-size: 56px;
+    line-height: 0;
+    font-weight: 400;
+}
+
+.site-content p {
+    font-size: 15px;
+    line-height: 0px;
+    opacity: 75%;
+}
+.top div {
+    margin-bottom: 60px;
+}
+
+.tooltip {
+    position: relative;
+    /* making the .tooltip span a container for the tooltip text */
+    /* border-bottom: 1px dashed #000; */
+    /* little indicater to indicate it's hoverable */
+}
+
+.tooltip:before {
+    content: attr(data-text);
+    /* here's the magic */
+    position: absolute;
+
+    /* vertically center */
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+
+    /* move to right */
+    /* top: 300%; */
+    left: 120% !important;
+    /* and add a small left margin */
+
+    /* basic styles */
+    width: max-content;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(47, 49, 54, .6);
+    backdrop-filter: blur(3px);
+    color: #fff;
+    text-align: center;
+    
+    border-radius: 4px;
+    border-color: #7289da !important;
+    border-left: 4px solid;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+
+    display: none;
+    /* hide by default */
+    z-index: 2147483647;
+}
+
+.tooltip:hover::before {
+    display: block;
+}

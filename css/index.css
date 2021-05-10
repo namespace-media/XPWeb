@@ -1,0 +1,38 @@
+.index-content {
+    font-weight: 400;
+    /* padding-right: 50px; */
+    box-sizing: content-box;
+    width: 57%;
+    height: 280px;
+    /* border: dashed red 2px; */
+    overflow: visible;
+}
+
+.index-content h2 {
+    margin-top: 50px;
+    font-size: 100px;
+    line-height: 0;
+    font-weight: 400;
+}
+
+.index-content p {
+    max-width: 80%;
+    font-size: 22.5px;
+    line-height: 35px;
+    opacity: 75%;
+}
+/* 
+.index-content a {
+    font-weight: lighter;
+} */
+
+.index-content svg {
+    margin-top: 12px;
+    left: -125px;
+    position: absolute;
+}
+
+.index-content p:last-child {
+    opacity: 100%;
+    line-height: 60px;
+}
